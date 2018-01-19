@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile: Theme Download</title>
+    <link rel="stylesheet" href="blauwgeel.min.css" />
+    <link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css" />
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<html>
+
+<body>
+    <div id="pag1" data-role="page" data-theme="b">
+        <div data-role="header">
+            <h1>Auto verkopen</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <form action="" method="post">
+                <label class="ui-hidden-accessible" for="naam"></label>
+                <input name="naam" id="naam" type="text" placeholder="Naam van de aanbieder" value="" data-mini="true" required>
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <label for="m">Man</label>
+                    <input name="geslacht" id="m" type="radio" checked="checked" value="m">
+                    <label for="v">Vrouw</label>
+                    <input name="geslacht" id="v" type="radio" value="v">
+                </fieldset>
+
+                <label class="ui-hidden-accessible" for="hobby">Kies een model:</label>
+                <select name="model" id="model">
+                    <option value="">Model</option>
+                    <option value="1">Serie 1</option>
+                    <option value="2">Serie 2</option>
+                    <option value="3">Serie 3</option></option>
+                    <option value="4">Serie 4</option>
+                    <option value="5">Serie 5</option>
+                </select>
+
+
+                <label for="model">Kies een kleur:</label>
+                <form action="Kies je kleur">
+                    <input type="radio" name="carroserie" value="Wit"> Wit<br>
+                    <input type="radio" name="carroserie" value="Zwart"> Zwart<br>
+                    <input type="radio" name="carroserie" value="Rood"> Rood <br>
+                    <input type="radio" name="carroserie" value="Zilver"> Zilver <br>
+                </form>
+
+                <label for="model">Brandstof:</label>
+                <form action="Kies je brandstof">
+                    <input type="radio" name="brandstof" value="gas"> Gas<br>
+                    <input type="radio" name="brandstof" value="benzine"> Benzine<br>
+                    <input type="radio" name="brandstof" value="diesel"> Diesel <br>
+                </form>
+
+                <label class="ui-hidden-accessible" for="bouwjaar">Kies een Bouwjaar:</label>
+                <select name="bouwjaar" id="bouwjaar">
+                    <option value="">bouwjaar</option>
+                    <option value="1980">1980</option>
+                    <option value="1990">1990</option>
+                    <option value="2000">2000</option></option>
+                    <option value="2010">2010</option>
+                    <option value="2015">2015</option>
+                </select>
+
+                <form method="post" action="demoform.asp">
+                    <label for="Kilometer">Aantal kilometers:</label>
+                    <input name="Aantal kilometers" id="kilometers" type="range" min="0" max="200000" step="1" value="0">
+                </form>
+                
+                
+                <fieldset class="ui-field-contain">
+                <form action="Extra opties" action="Extra opties">
+                    <label for="Extra opties">Extra opties</label>
+                    <select name="Extra opties">
+                    <option value="Lm-velgen">Lm-velgen</option>
+                    <option value="Metallic cars">Metallic lak</option>
+                    <option value="navigatie">Navigatie</option>
+                    <option value="stoelverwarming">Stoelverwarming</option>
+                    </select>
+                    </fieldset>
+                </form>
+
+
+                <form>
+                    <label class="ui-hidden-accessible" for="opmerkingen">Opmerkingen:</label>
+                    <textarea name="opmerkingen" id="opmerkingen" rows="8" cols="40" data-mini="true">Opmerkingen</textarea>
+                    <label class="ui-hidden-accessible" for="verzend"></label>
+                    <button class="ui-shadow ui-btn ui-corner-all ui-mini" id="verzend" type="submit">Verzend</button>
+                </form>
+
+                <form action="Vraagprijs" method="post">
+                    <label class="ui-hidden-accessible" for="naam"></label>
+                    <input name="prijs" id="Vraagprijs" type="number" placeholder="Vraagprijs" value="" data-mini="true" required>
+                    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" >
+
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h3>&copy; INF-actief</h3>
+        </div>
+    </div>
+</body>
+
+</html>
